@@ -6,7 +6,6 @@ elf_calorie_list = []
 
 with open('input.txt') as f:
     content = f.readlines()
-# Remove whitespace characters like '\n' at the end of each line
 lines = [x.strip() for x in content]
 
 for line in lines:
@@ -19,5 +18,4 @@ for line in lines:
     else:
         elf = int(elf) + int(line)
 print(elf_with_most_calories)
-print(elf_calorie_list)
 print(sum(elf_calorie_list[:3]))
